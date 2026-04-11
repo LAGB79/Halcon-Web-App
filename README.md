@@ -23,3 +23,13 @@ Para este proyecto se ha seleccionado la metodología **Scrum**. El desarrollo s
 
 ##  Autor
 [Luis Alonso Garcia Barron]
+
+## Actualización Evidencia 2 - Programación de la Lógica
+
+En esta fase, transformé los diagramas de la Evidencia 1 en un sistema funcional utilizando Laravel y MySQL.
+
+### Implementaciones clave:
+* **Modelos y Migraciones:** Creé las entidades de Pedidos (Orders), Usuarios, Roles y Evidencias, respetando las llaves foráneas para mantener la integridad de los datos.
+* **Borrado Lógico:** Implementé SoftDeletes para que los registros no se eliminen permanentemente, permitiendo auditorías y recuperación de datos.
+* **Flujo de Logística:** Programé la lógica para que el estatus del pedido cambie según el avance (Ordered -> In Process -> In Route -> Delivered), obligando a la carga de fotos en las etapas finales.
+* **Seguridad:** El sistema diferencia entre consultas públicas (por número de factura) y el panel administrativo protegido.
